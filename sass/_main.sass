@@ -1,2 +1,330 @@
-// Normally mainpage styles
+// wrapper
+.wrapper
+	margin: 0 auto
+	width: 1170px
+	
+// header 
+.header
+	height: 60px
+	background: #1C1F22 
+
+.header__wrap
+	margin: 0 auto
+	padding-top: 15px
+	width: 1174px
+	
+.header__company
+	float: left
+	padding-top: 4px
+	color: #FFF 
+	font-size: 18px
+	text-decoration: none
+	+ht 
+
+.header__logo
+	margin: 0 auto 0
+	display: block
+	+s(logo)
+
+// footer
+.footer
+	padding-top: 23px
+	height: 57px
+	background: #1c1f22
+	+box
+.footer__list
+	font-size: 0
+	text-align: right
+	li
+		position: relative
+		padding: 0 27px 0 26px 
+		font-size: 12px
+		text-transform: uppercase
+		display: inline-block
+		+hl
+		&:before
+			position: absolute
+			content: ""
+			top: 1px
+			right: 0
+			width: 1px
+			height: 13px
+			background: #FFF 
+		&:last-child
+			padding-right: 0
+			&:before
+				display: none 
+
+// toppic
+.toppic
+	position: relative
+	padding: 45px 75px 0 100px 
+	height: 382px
+	border-top: 4px solid #34393E 
+	z-index: 3
+	background: url('../img/toppic_bg.png') no-repeat 50% -55px, #F6B448 
+	+box-shadow(inset 0 -4px 0 rgba(70,76,84,.57))
+	&:before
+		position: absolute
+		content: "" 
+		bottom: -27px
+		left: 50%
+		margin-left: -27px
+		+s(hoverarrow)
+	
+.toppic__text
+	float: left
+	margin-top: 76px
+	font-size: 48px
+	line-height: 1
+.toppic__text_t
+	padding-bottom: 14px
+	+hrc
+.toppic__text_b
+	+hlc
+.contacts
+	float: right
+	
+.contacts__block
+	position: relative
+	padding: 0 78px 23px 0
+	font-size: 18px
+	text-transform: uppercase
+	+text-shadow(0 2px 0 rgba(38,93,142,.51))
+	+hrc
+	&:before
+		position: absolute
+		content: ""
+		bottom: 0
+		left: 44px
+		+s(c-pic)
+
+.contacts__list
+	position: absolute
+	left: -77px
+	top: 66px
+	width: 251px
+	height: 200px
+	padding-top: 36px
+	text-align: center
+	background: rgba(255,255,255,.48)
+	+box-shadow(inset 0 -4px 0 rgba(42,74,103,.57))
+	+text-shadow(none)
+	+box
+	+hlc
+.contacts__phone
+	padding-bottom: 30px
+	
+.contacts__addres
+	font-size: 14px
+	text-transform: uppercase
+	
+// discount
+.discount
+	background: #2C2C2C 
+	.wrapper
+		position: relative
+		height: 423px
+		
+.discount__img
+	opacity: 0.6 
+	display: block
+.discount__block
+	position: absolute
+	top: 0
+	left: 105px
+	padding: 42px 55px 50px 
+	width: 967px
+	height: 211px
+	font-size: 36px
+	text-align: right
+	background: #F6B448 
+	opacity: 1
+	+hlc
+	+box
+.discount__left
+	float: left
+	padding-top: 20px
+	
+.discount__top
+	+htc
+
+.discount__right
+	float: right
+	font-size: 140px
+	line-height: 1
+	+htc
+	
+// sauna
+.sauna
+.sauna__top
+	height: 146px
+	font-size: 36px
+	line-height: 1
+	background: #387ED6 
+	+box-shadow(inset 0 -4px 0 rgba(61,67,76,.47))
+	+box
+	.wrapper
+		position: relative
+		padding-top: 55px
+.sauna__top_or
+	background: #edac42 
+.sauna__arr
+	position: absolute
+	top: 15px
+	left: 2px
+	+s(arrow)
+
+.sauna__left
+	float: left
+	
+.sauna__title
+	+hlc
+	span
+		font-weight: 100 
+		+htc
+
+.sauna__proportions
+	padding: 5px 0 0 20px
+	font-size: 18px
+	+hlc
+
+.sauna__price
+	position: relative
+	float: right
+	padding-right: 150px
+	+hrc
+	&:before
+		position: absolute
+		content: ""
+		top: -13px
+		right: 56px
+		+s(s-pic) 
+
+.sauna__gal
+	height: 236px
+	border-bottom: 1px solid rgba(#52575f,.1)
+	background: rgba(70,76,84,.9)
+	+box-shadow(inset 0 -3px 0 rgba(61,67,76,.47))
+	+background-image(linear-gradient(bottom, rgba(201,201,201,.44) 0%, rgba(255,255,255,.44) 50%, rgba(201,201,201,.44) 100%))	
+	.wrapper
+		font-size: 0
+	a
+		position: relative
+		+transition(0.2s)
+		&:before
+			position: absolute
+			content: ""
+			top: 50%
+			left: 50%
+			margin: -17.5px 0 0 -17.5px
+			display: none
+			+s(fen-pic)
+		&:hover
+			background: #000 
+			+transition(0.2s)
+			img
+				opacity: 0.7
+			+transition(0.2s)
+			&:before
+				display: block
+				+transition(0.2s)
+				
+.sauna__item
+	margin-left: 6px
+	font-size: 0
+	display: inline-block
+	&:first-child
+		margin: 0
+	img
+		display: block
+		+transition(0.2s)
+	a
+		margin-left: 5px
+		display: inline-block
+		&:first-child
+			margin: 0
+
+.sauna__cont
+	background: #454B53
+	vertical-align: top
+	.wrapper
+	.sauna__item
+		margin-left: 1%
+		padding: 14px 0 
+		width: 33%
+		font-size: 16px
+		vertical-align: top
+		+box
+		+hlc
+		&:first-child
+		margin: 0
+	.sauna__item_t, .sauna__item_tp
+		padding: 26px 0 40px
+	.sauna__item_tp
+		padding-left: 12px 
  
+// form
+.form
+	margin-left: 7px
+	padding: 22px 15px 
+	width: 380px
+	background: rgba(136,149,168,.89)
+	+box
+	.input
+		margin-bottom: 17px
+	label
+		font-size: 0
+	.error
+		&:focus
+			border: 1px solid red
+.form__btn
+	+clr
+	.btn
+		float: right
+
+.form__title
+	padding-bottom: 20px
+	font-size: 24px
+	line-height: 1.2
+	+htc
+
+.form__offer
+	margin: 18px 0 30px
+	font-size: 30px
+	line-height: 1.2
+	+hrc
+	span
+		+htc
+
+.form__phone
+	font-size: 14px
+	+hlc
+	span
+		+hrc
+
+// partner
+.partner
+	height: 146px
+	background-color: #b3bbc5
+	+box-shadow(inset 0 -4px 0 rgba(61,67,76,.47))
+	.wrapper
+		padding-top: 22px
+		+box
+
+.partner__left
+	float: left
+	font-size: 36px
+	line-height: 1.2
+
+.partner__title
+	+hrc
+
+.partner__title-b
+	+hlc
+
+.logo
+	float: right
+	margin-top: 16px
+	display: block
+	+s(logo-b)

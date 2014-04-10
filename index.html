@@ -6,17 +6,322 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" type="text/css" href="css/jquery.fancybox.css" />
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.validate.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
-<!-- BEGIN  out-->
-<div class="out">
+<!-- BEGIN .header -->
+<header class="header">
+	<div class="header__wrap">
+		<a href="#" class="header__company">MTK Wellness</a>
+		<a href="#" class="header__logo"></a>
+	</div>
+</header>
+<!-- END .header -->
 
+<!-- BEGIN .toppic -->
+<div class="toppic">
+	<div class="wrapper">
+		<div class="toppic__text">
+			<div class="toppic__text_t">Распродажа</div>
+			<div class="toppic__text_b">выставочных образцов!</div>
+		</div>
+		<div class="contacts">
+			<div class="contacts__block">КОНТАКТЫ
+				<div class="contacts__list">
+					<div class="contacts__phone">
+						<p>8 (495) 720 31 21</p>
+						<p>8 (495) 979 38 36</p>
+					</div>
+					<div class="contacts__addres">ул. Проспект Мира, 101<br>Выставочный комплекс<br>«Класс Хаус» </div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- END out-->
+<!-- END .toppic -->
+
+<!-- BEGIN .discount -->
+<div class="discount">
+	<div class="wrapper">
+		<img class="discount__img" src="img/arr1.png" alt="img">
+		<div class="discount__block">
+			<div class="discount__left">
+				<div class="discount__top">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!</div>
+				СКИДКИ ДО
+			</div>
+			<div class="discount__right">40%</div>
+		</div>
+	</div>
+</div>
+<!-- END .discount -->
+
+<!-- BEGIN .sauna -->
+<div class="sauna">
+	<div class="sauna__top">
+		<div class="wrapper">
+			<i class="sauna__arr"></i>
+			<div class="sauna__left">
+				<h3 class="sauna__title">Сауна KLAFS <span>на базе модели CHARISMA</span></h3>
+				<div class="sauna__proportions">Внешние размеры 220 х 230 х 216,5 см</div>
+			</div>
+			<div class="sauna__price">30 000  €</div>
+		</div>
+	</div>
+	<div class="sauna__gal">
+		<div class="wrapper">
+			<a href="./img/arr3.png" class="sauna__item fancybox" rel="group1"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<a href="./img/arr4.png" class="sauna__item fancybox" rel="group1"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<div class="sauna__item">
+				<a href="./img/arr5.png" class="sauna__item fancybox" rel="group1"><img src="http://lorempixel.com/198/235" alt="img"></a>
+				<a href="./img/arr6.png" class="sauna__item fancybox" rel="group1"><img src="http://lorempixel.com/182/235" alt="img"></a>
+			</div>
+		</div>
+	</div>
+	<div class="sauna__cont">
+		<div class="wrapper">
+			<div class="sauna__item sauna__item_t">
+				<p>- Стены и потолок самонесущие, изготовлены из сэндвич-панелей.</p>
+				<p>- Выдвинутый дверной проем.</p>
+				<p>- Внешняя отделка – вишневый шпон.</p>
+				<p>- Полочки изогнутые для аксессуаров, отделка – вишневый шпон.</p>
+				<p>- Ручка из массива закругленная для полотенец.</p>
+				<p>- Боковые окна – 3 шт.</p>
+				<p>- Стены облицованы внутри вагонкой Hemlock Softline.</p>
+				<p>- Потолок из панелей, пять колец в виде солнца.</p>
+				<p>- Подсветка центральной части потолка.</p>
+				<p>- 3х-уровневые лежаки модели LOUNGE из Абаша в комплекте с  табуретом.</p>
+				<p>- Подголовник модели LOUNGE из Абаша – 2 шт.</p>
+				<p>- Подспинник из Абаша модели LOUNGE – 2 шт.</p>
+				<p>- Печь под лавкой BONATHERM  с изогнутым экраном: мощность 9 кВт и  ёмкость для камней.</p>
+			</div>
+			<div class="sauna__item sauna__item_tp">
+				<p>- Лечебно-профилактическая система SANARIUM, встроенная в BONATHERM, с функцией SaunaPur со звуковым сопровождением на выбор мелодий и звуков природы.</p>
+				<p>- Сенсорный пульт управления 18033 в комплекте с датчиками.</p>
+				<p>- Пульт дистанционного управления опциями в сауну  WELLCONTROL.</p>
+				<p>- Дверь из безопасного тонированного стекла (размеры двери 90х200 см, толщина стекла 8 мм),  деревянная рама из Hemlock, ручка Charisma.</p>
+				<p>- Светильник Olymp.</p>
+				<p>- Песочные часы.</p>                                                                                                        
+				<p>- Термометр.</p>
+				<p>- Гигрометр.</p>                                                                                                           
+				<p>- Бадья и ковш.</p>
+			</div>
+			<div class="sauna__item">
+				<div class="form">
+					<div class="form__title">Оставьте заявку и наши менеджеры свяжутся с Вами:</div>
+					<form class="js_loginform">
+						<input type="text" class="input" name="name" placeholder="Ваше Имя" onkeyup="return js_name(this);">
+						<input type="text" class="input" name="phone" placeholder="Контактный телефон" onkeyup="return js_numbers(this);">
+						<div class="form__btn"><button type="submit" name="enter" class="btn">Заказать</button></div>
+					</form>
+					<div class="form__offer">Спешите!<br><span>Предложение<br>ограничено!</span></div>
+					<div class="form__phone">Или позвоните нам по телефону: <span>8 (495) 720 31 21</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .sauna -->
+
+<!-- BEGIN .sauna -->
+<div class="sauna">
+	<div class="sauna__top sauna__top_or">
+		<div class="wrapper">
+			<i class="sauna__arr"></i>
+			<div class="sauna__left">
+				<h3 class="sauna__title">Сауна KLAFS <span>на базе модели CHARISMA</span></h3>
+				<div class="sauna__proportions">Внешние размеры 220 х 230 х 216,5 см</div>
+			</div>
+			<div class="sauna__price">30 000  €</div>
+		</div>
+	</div>
+	<div class="sauna__gal">
+		<div class="wrapper">
+			<a href="./img/arr6.png" class="sauna__item fancybox" rel="group2"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<a href="./img/arr7.png" class="sauna__item fancybox" rel="group2"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<a href="./img/arr8.png" class="sauna__item fancybox" rel="group2"><img src="http://lorempixel.com/385/235" alt="img"></a>
+		</div>
+	</div>
+	<div class="sauna__cont">
+		<div class="wrapper">
+			<div class="sauna__item sauna__item_t">
+				<p>- Стены и потолок самонесущие, изготовлены из сэндвич-панелей.</p>
+				<p>- Выдвинутый дверной проем.</p>
+				<p>- Внешняя отделка – вишневый шпон.</p>
+				<p>- Полочки изогнутые для аксессуаров, отделка – вишневый шпон.</p>
+				<p>- Ручка из массива закругленная для полотенец.</p>
+			</div>
+			<div class="sauna__item sauna__item_tp">
+				<p>- Лечебно-профилактическая система SANARIUM, встроенная в BONATHERM, с функцией SaunaPur со звуковым сопровождением на выбор мелодий и звуков природы.</p>
+				<p>- Сенсорный пульт управления 18033 в комплекте с датчиками.</p>
+				<p>- Пульт дистанционного управления опциями в сауну  WELLCONTROL.</p>
+				<p>- Дверь из безопасного тонированного стекла (размеры двери 90х200 см, толщина стекла 8 мм),  деревянная рама из Hemlock, ручка Charisma.</p>
+				<p>- Светильник Olymp.</p>
+				<p>- Песочные часы.</p>                                                                                                        
+				<p>- Термометр.</p>
+				<p>- Гигрометр.</p>                                                                                                           
+				<p>- Бадья и ковш.</p>
+			</div>
+			<div class="sauna__item">
+				<div class="form">
+					<div class="form__title">Оставьте заявку и наши менеджеры свяжутся с Вами:</div>
+					<form class="js_loginform">
+						<input type="text" class="input" name="name" placeholder="Ваше Имя" onkeyup="return js_name(this);">
+						<input type="text" class="input" name="phone" placeholder="Контактный телефон" onkeyup="return js_numbers(this);">
+						<div class="form__btn"><button type="submit" name="enter" class="btn">Заказать</button></div>
+					</form>
+					<div class="form__offer">Спешите!<br><span>Предложение<br>ограничено!</span></div>
+					<div class="form__phone">Или позвоните нам по телефону: <span>8 (495) 720 31 21</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .sauna -->
+
+
+<!-- BEGIN .sauna -->
+<div class="sauna">
+	<div class="sauna__top">
+		<div class="wrapper">
+			<i class="sauna__arr"></i>
+			<div class="sauna__left">
+				<h3 class="sauna__title">Паровой душ KLAFS</h3>
+				<div class="sauna__proportions">Внешние размеры 220 х 230 х 216,5 см</div>
+			</div>
+			<div class="sauna__price">30 000  €</div>
+		</div>
+	</div>
+	<div class="sauna__gal">
+		<div class="wrapper">
+			<a href="./img/arr2.png" class="sauna__item fancybox" rel="group3"><img src="http://lorempixel.com/280/235" alt="img"></a>
+			<a href="./img/arr3.png" class="sauna__item fancybox" rel="group3"><img src="http://lorempixel.com/200/235" alt="img"></a>
+			<a href="./img/arr4.png" class="sauna__item fancybox" rel="group3"><img src="http://lorempixel.com/196/235" alt="img"></a>
+			<a href="./img/arr5.png" class="sauna__item fancybox" rel="group3"><img src="http://lorempixel.com/473/235" alt="img"></a>
+		</div>
+	</div>
+	<div class="sauna__cont">
+		<div class="wrapper">
+			<div class="sauna__item sauna__item_t">
+				<p>- Стены и потолок самонесущие, изготовлены из сэндвич-панелей.</p>
+				<p>- Выдвинутый дверной проем.</p>
+				<p>- Внешняя отделка – вишневый шпон.</p>
+				<p>- Полочки изогнутые для аксессуаров, отделка – вишневый шпон.</p>
+				<p>- Ручка из массива закругленная для полотенец.</p>
+			</div>
+			<div class="sauna__item sauna__item_tp">
+				<p>- Лечебно-профилактическая система SANARIUM, встроенная в BONATHERM, с функцией SaunaPur со звуковым сопровождением на выбор мелодий и звуков природы.</p>
+				<p>- Сенсорный пульт управления 18033 в комплекте с датчиками.</p>
+				<p>- Пульт дистанционного управления опциями в сауну  WELLCONTROL.</p>
+				<p>- Дверь из безопасного тонированного стекла (размеры двери 90х200 см, толщина стекла 8 мм),  деревянная рама из Hemlock, ручка Charisma.</p>
+				<p>- Светильник Olymp.</p>
+				<p>- Песочные часы.</p>                                                                                                        
+				<p>- Термометр.</p>
+				<p>- Гигрометр.</p>                                                                                                           
+				<p>- Бадья и ковш.</p>
+			</div>
+			<div class="sauna__item">
+				<div class="form">
+					<div class="form__title">Оставьте заявку и наши менеджеры свяжутся с Вами:</div>
+					<form class="js_loginform">
+						<input type="text" class="input" name="name" placeholder="Ваше Имя" onkeyup="return js_name(this);">
+						<input type="text" class="input"  name="phone" placeholder="Контактный телефон"onkeyup="return js_numbers(this);">
+						<div class="form__btn"><button type="submit" name="enter" class="btn">Заказать</button></div>
+					</form>
+					<div class="form__offer">Спешите!<br><span>Предложение<br>ограничено!</span></div>
+					<div class="form__phone">Или позвоните нам по телефону: <span>8 (495) 720 31 21</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .sauna -->
+
+<!-- BEGIN .sauna -->
+<div class="sauna">
+	<div class="sauna__top sauna__top_or">
+		<div class="wrapper">
+			<i class="sauna__arr"></i>
+			<div class="sauna__left">
+				<h3 class="sauna__title">Сауна KLAFS <span>на базе модели CHARISMA</span></h3>
+				<div class="sauna__proportions">Внешние размеры 220 х 230 х 216,5 см</div>
+			</div>
+			<div class="sauna__price">30 000  €</div>
+		</div>
+	</div>
+	<div class="sauna__gal">
+		<div class="wrapper">
+			<a href="./img/arr6.png" class="sauna__item fancybox" rel="group4"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<a href="./img/arr7.png" class="sauna__item fancybox" rel="group4"><img src="http://lorempixel.com/385/235" alt="img"></a>
+			<a href="./img/arr8.png" class="sauna__item fancybox" rel="group4"><img src="http://lorempixel.com/385/235" alt="img"></a>
+		</div>
+	</div>
+	<div class="sauna__cont">
+		<div class="wrapper">
+			<div class="sauna__item sauna__item_t">
+						<p>- Стены, потолок самонесущие, изготовлены из экструдированного пенополистирола, армированы с двух сторон, покрыты специальной штукатуркой и шпаклеваны в фабричных условиях Германии. Поверхность подготовлена для укладки плитки или мозаики.</p>
+						<p>- Керамические сиденья синего цвета с подспинником с интегрированной системой подогрева с водяным носителем.</p>
+						<p>- Купол изготовлен из экструдированного армированного пенополистирола, покрыт специальным составом, окрашен, не требует дополнительной отделки.</p>
+						<p>- Дверь из безопасного стекла (толщина стекла 8 мм) с размерами 70х198,8 см в алюминиевой раме, окрашенной в белый цвет. - - Стекло: прозрачное. Ручка H+S, снаружи и внутри пластик с логотипом Klafs. </p>
+						<p>- Настенный паровой камин  из экструдированного, армированного пенополистирола покрытого специальным составом, поверхность подготовлена для облицовки.</p>
+			</div>
+			<div class="sauna__item sauna__item_tp">
+				<p>- Лечебно-профилактическая система SANARIUM, встроенная в BONATHERM, с функцией SaunaPur со звуковым сопровождением на выбор мелодий и звуков природы.</p>
+				<p>- Сенсорный пульт управления 18033 в комплекте с датчиками.</p>
+				<p>- Пульт дистанционного управления опциями в сауну  WELLCONTROL.</p>
+				<p>- Дверь из безопасного тонированного стекла (размеры двери 90х200 см, толщина стекла 8 мм),  деревянная рама из Hemlock, ручка Charisma.</p>
+				<p>- Светильник Olymp.</p>
+				<p>- Песочные часы.</p>                                                                                                        
+				<p>- Термометр.</p>
+				<p>- Гигрометр.</p>                                                                                                           
+				<p>- Бадья и ковш.</p>
+			</div>
+			<div class="sauna__item">
+				<div class="form">
+					<div class="form__title">Оставьте заявку и наши менеджеры свяжутся с Вами:</div>
+					<form class="js_loginform">
+						<input type="text" class="input" name="name" placeholder="Ваше Имя" onkeyup="return js_name(this);">
+						<input type="text" class="input" name="phone" placeholder="Контактный телефон" onkeyup="return js_numbers(this);">
+						<div class="form__btn"><button type="submit" name="enter" class="btn">Заказать</button></div>
+					</form>
+					<div class="form__offer">Спешите!<br><span>Предложение<br>ограничено!</span></div>
+					<div class="form__phone">Или позвоните нам по телефону: <span>8 (495) 720 31 21</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .sauna -->
+
+<!-- BEGIN .partner -->
+<div class="partner">
+	<div class="wrapper">
+		<div class="partner__left">
+			<div class="partner__title">ООО «МТК Веллнесс»</div>
+			<div class="partner__title-b">официальный партнер компании Klafs в России</div>
+		</div>
+		<a href="#" class="logo"></a>
+	</div>
+</div>
+<!-- END .partner -->
+
+<!-- BEGIN .footer -->
+<footer class="footer">
+	<div class="wrapper">
+		<ul class="footer__list">
+			<li>8 (495) 720 31 21</li>
+			<li>8 (495) 979 38 36</li>
+			<li>ул. Проспект Мира, 101</li>
+			<li>Выставочный комплекс «Класс Хаус»</li>
+		</ul>
+	</div>
+</footer>
+<!-- END .footer -->
 
 </body>
 </html>
